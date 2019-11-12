@@ -1,0 +1,84 @@
+CREATE TABLE Client_Avtorizat
+(
+	id_avtrizacia int primary key identity(1,1),
+	Login varchar(15) not null,
+	Password varchar(15) not null,
+	E-Mail varchar(45) not null,
+	Fam varchar(30) not null,
+	Imya varchar(30) not null,
+	Othc varchar(30) null,
+	Data_rojd varchar(10) not null
+)
+CREATE TABLE Postavshik
+(
+	id_postavshik int primary key identity(1,1) not null,
+	Kolichestvo varchar(2) not null,
+	Cena varchar(4) not null
+)
+CREATE TABLE Prodazha
+(
+	id_prodazha int primary key identity(1,1) not null,
+Kolichestvo varchar(2) not null,
+klient_id int not null
+
+)
+CREATE TEBLE Sotrudniki
+(
+	id_sotrudnik int primary key identity(1,1),
+	Imya_sotr varchar(30) not null,
+	Fam_sotr varchar(30) not null,
+	Otch_sotr varchar(30) null,
+	Pass_numm varchar(4) not null,
+	Stazh_jobs varchar(10) not null,
+	Data_rozhdeniya varchar(10) not null
+)
+CREATE TABLE Sklad
+(
+	id_tovar int primary key identity(1,1) not null,
+	Naim_tovara varchar(50) not null,
+	Kolichestvo varchar(2) not null
+)
+
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+PSP(Чёрная)                   
+PS3                           
+PS4                           
+Xbox360                       
+XboxONE                       
+PS3 Slim                      
+PS4 Slim                      
+PGP                           
+Multy Drive                   
+Gameboy                       
+PS4 4K version                
+EXEQ NET(Чёрная)              
+PSP(Белая)                    
+PSP(Синяя)                    
+EXEQ NET(Белая)               
+EXEQ NET(Синяя)               
+VGA Провод                    
+HDMI Провод                   
+Джёстик PS3(чёрный)           
+Джёстик PS3(белый)            
+Джёстик PS4(чёрный)           
+Джёстик PS4(белый)            
+Микрофон для PS3              
+Камера SONY PLAYSTATION       
+Пульт SONY PLAYSTATION        
+GTA5 PS3                      
+GTA5 PS4                      
+PlayStation+                  
+Ethernet провод               
+FIFA17 PS3                    
+FIFA17 PS4                    
+Шаман Кинг Gameboy            
+NFS Carbon PSP                
+NFS MW PSP                    
+Last Of Us PS3                
+Last Of Us PS4                
+Final Fantasy VII  PSP        
+Зарядка для PS3 джёстиков     
+USB провод 2.0                
+Наклейка для Джёстика PS3     
